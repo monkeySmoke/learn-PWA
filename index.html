@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is my learn PWA</title>
+</head>
+<body>
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').then(function (registration) {
+        console.log('serviceWorker registration successful with scope:', registration.scope)
+    }).catch(function (error) {
+        console.log('serviceWorker registration failed:', error)
+    })
+}
+</script>
+</body>
+</html>
