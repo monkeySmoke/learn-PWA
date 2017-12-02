@@ -1,4 +1,4 @@
-addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function (event) {
     if (/\.jpg$/.test(event.request.url)) {
         event.respondWith(fetch('./images/img2.png'))
     }
