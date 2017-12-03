@@ -1,3 +1,4 @@
+
 importScripts('/sw-toolbox/sw-toolbox.js')
 
 toolbox.precache([
