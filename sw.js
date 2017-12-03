@@ -7,7 +7,8 @@ self.addEventListener('install', function (event) {
             .then(function (cache) {
                 cache.addAll([
                     './main.js',
-                    './images/img2.png'
+                    './images/img2.png',
+                    './index.html'
                 ])
             })
     )
