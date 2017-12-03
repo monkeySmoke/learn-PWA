@@ -1,5 +1,5 @@
 
-importScripts('/sw-toolbox/sw-toolbox.js')
+importScripts('./sw-toolbox/sw-toolbox.js')
 
 toolbox.precache([
     './main.js',
