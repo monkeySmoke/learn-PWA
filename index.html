@@ -5,7 +5,8 @@
     <title>this is my learn PWA</title>
 </head>
 <body>
-<button id="getImg">发送获取图片请求</button>
+<img src="./images/img2.png" alt="">
+<script src="./main.js"></script>
 <script>
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').then(function (registration) {
@@ -13,9 +14,6 @@ if ('serviceWorker' in navigator) {
     }).catch(function (error) {
         console.log('serviceWorker registration failed:', error)
     })
-}
-document.getElementById('getImg').onclick = function () {
-    fetch('./images/img1.jpg')
 }
 </script>
 </body>
